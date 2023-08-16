@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<the48:BottomSheet xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:the48="https://schemas.the49.com/dotnet/2023/maui"
+             x:Class="DemoBottomSheet.MySheet" HasBackdrop="True">
+    <the48:BottomSheet.Detents>
+        <the48:HeightDetent Height="200"></the48:HeightDetent>
+    </the48:BottomSheet.Detents>
+
+    <Grid RowDefinitions="*,*">
+        <Image Source="minus.png" WidthRequest="100" HeightRequest="10" VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand" />
+
+        <VerticalStackLayout Grid.Row="1" Margin="0,-50,0,0">
+            <HorizontalStackLayout Spacing="10" Margin="0,-20,0,0">
+                <Image Source="share.png" WidthRequest="30" HeightRequest="30" />
+                <Button Text="Share" BorderWidth="0" BackgroundColor="Transparent" TextColor="Black"></Button>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Spacing="20">
+                <Image Source="copy.png" WidthRequest="30" HeightRequest="30" />
+                <Button Text="Copy" BorderWidth="0" BackgroundColor="Transparent" TextColor="Black"></Button>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Spacing="20">
+                <Image Source="paste.png" WidthRequest="30" HeightRequest="30" />
+                <Button Text="Paste" BorderWidth="0" BackgroundColor="Transparent" TextColor="Black"></Button>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Spacing="20">
+                <Image Source="delete.png" WidthRequest="30" HeightRequest="30" />
+                <Button Text="Delete" BorderWidth="0" BackgroundColor="Transparent" TextColor="Black"></Button>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </Grid>
+
+       
+
+</the48:BottomSheet>
